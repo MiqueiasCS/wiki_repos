@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ItemContainer = styled.div`
   width: 80%;
+  margin-top: 20px;
 
   h3 {
     font-size: 32px;
@@ -11,7 +12,7 @@ export const ItemContainer = styled.div`
   p {
     font-size: 16px;
     color: #fafafa60;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .links {
@@ -22,9 +23,21 @@ export const ItemContainer = styled.div`
 
   .links a {
     margin-top: 8px;
+    text-decoration: none;
+    color: #ffffff;
   }
-  .links a.remover {
+
+  .links a:hover {
+    color: #8484ff;
+  }
+
+  .links p.remover {
     color: #f00000;
+  }
+
+  .links p.remover:hover {
+    cursor: pointer;
+    color: #ffffff;
   }
 
   hr {
